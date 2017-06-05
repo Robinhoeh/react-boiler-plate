@@ -1,0 +1,51 @@
+create branch
+
+1) type: git checkout -b gh-pages     THis creates a new branch   - hit enter
+
+	should say: switched to new branch gh-pages
+
+2) open up .gitignore
+
+type: open . in git
+	drag folder into sublime
+		go into the git ignore folder
+
+3) remove public from the gitignore file
+	save it
+
+4) go to git
+Type: git status
+	you should see modified, public/ folder is Untracked files
+
+5) Type: git add .gitignore
+	git add public
+		git status
+
+Should show the public folders have been added in 
+
+6) Type: git commit -m "adding the public folder"
+	hit ENTER
+
+7) Type: git branch
+* beside branch we are currently on
+
+Type: git push origin gh-pages
+	Hit ENTER
+
+you should see that in the remote repo is show gh pages in the new branch
+
+8) Type: git push upstream gh-pages
+	This creates a gh-pages branch on your organizations page on 
+
+9) go to git hub
+	click on organization repo
+		should see new branch/pages
+
+
+10) this branch is used for hosting out gh pages that has the public folder
+
+11) go to settings - scroll to source - master branch, click gh-pages branch
+	press save
+
+12) git checkout master - siwthced you back to the master branch
+
